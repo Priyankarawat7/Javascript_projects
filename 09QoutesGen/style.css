@@ -1,0 +1,126 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+}
+
+.container{
+    height: 100%;
+    min-height: 100vh;
+    background-color: rgb(178, 214, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.qoute-cont{
+    height: 250px;
+    width: 35%;
+    background-color: white;
+    border-radius: 10px;
+     display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    /* gap: 30;  */
+    padding: 5px 20px;
+   
+    /* justify-content: center; */
+}
+
+.qoute-cont h1{
+    font-size: 30px;
+    font-weight: 1000;
+    position: relative;
+    
+    /* line-height: 10px; */
+}
+.qoute-cont h1::after{
+     content: '';
+        display: block;
+     width: 60px;
+    height: 2.5px;
+    background: rgb(23, 124, 229);
+     margin: 8px auto 0;
+  
+
+}
+
+.qoute-cont  blockquote{
+    font-size: 22px;
+    min-height: 110px;
+}
+.qoute-cont blockquote:before, .qoute-cont blockquote::after{
+    content: '"';
+}
+
+.qoute-cont span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+     align-self: flex-end;
+}
+.qoute-cont span::before{
+    content: '';
+    width: 20px;
+    height: 1.5px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.button-cont{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom:40px ;
+
+}
+
+
+
+.newbtn{
+    height: 40px;
+    width:120px;
+    border-radius: 20px;
+    background-color: rgb(30, 64, 219);
+    font-size:16px;
+    border: none;
+    outline: none;
+    color: white;
+    box-shadow: 10px 10px 8px rgb(198, 196, 196);
+    transition: 0.3s ease;
+
+}
+.newbtn:hover{
+     background-color: rgb(236, 237, 241);
+    border:3px solid  rgb(30, 64, 219) ;
+    color: black;
+    
+}
+
+
+.twtbtn{
+     height: 40px;
+    width:120px;
+    border-radius: 20px;
+    background-color: rgb(236, 237, 241);
+    font-size:16px;
+    border: none;
+    outline: none;
+    color: black;
+    box-shadow: 10px 10px 8px rgb(198, 196, 196);
+      transition: 0.3s ease;
+
+}
+
+.twtbtn:hover{
+       background-color: rgb(30, 64, 219);
+       color: white;
+
+}
