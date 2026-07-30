@@ -1,0 +1,125 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppin',sans-serif;
+}
+
+.container{
+    height: 100%;
+    min-height: 100vh;
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.music-container{
+     height: 85vh;
+    width: 23%;
+    background-color: bisque;
+    border-radius:5px;
+   
+     
+}
+.nav-icons{
+    /* height: 50px;
+    width: 40%; */
+    background-color:bisque;
+     border-radius:5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+
+   
+}
+
+.nav-icons button{
+    height: 33px;
+    width: 33px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 8px 8px 8px gray;
+    color: palevioletred;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.song-img{
+    height: 200px;
+    width: 200px;
+    /* margin-left: 50px; */
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 60px gray;
+}
+
+.music-container h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #333;
+}
+
+.music-container p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #333;
+}
+
+#progress{
+    -webkit-appearance:none;
+    width: 90%;
+    height: 6px;
+    background: #f53192;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+
+}
+
+#progress::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    background-color: #f53192;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.controls div{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+     background-color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #f53192;
+    box-shadow: 0 10px 20px gray;
+    cursor: pointer;
+   
+}
+
+.container div:nth-child(2)
+{
+    transform: scale(1.2);
+    background-color: #f53192;
+    color: #fff;
+}

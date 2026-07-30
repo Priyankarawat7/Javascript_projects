@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="music-container">
+        <div class="nav-icons">
+            <button><i class="fa-solid fa-less-than"></i></button>
+          <button>  <i class="fa-solid fa-bars"></i></button> 
+        </div>
+
+        <img class="song-img" src="innam.jpg" alt="">
+        <h1>Inaam</h1>
+        <p>Jasleen Royal</p>
+
+        <audio   id="song">
+            <source src="Inaam.mp3" type="audio/mpeg">
+        </audio>
+
+        <input type="range" value="0" id="progress">
+
+        <div class="controls">
+            <div>
+                <i class="fa-solid fa-backward"></i>
+            </div>
+
+              <!-- <div>
+                <i class="fa-solid "></i>
+            </div> -->
+
+              <div onclick="playPause()">
+                 <i class="fa-solid fa-play" id="ctrlIcon"></i>
+            </div>
+
+              <div>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+
+            
+              
+               
+
+        </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js">
+    </script>
+    
+</body>
+</html>
