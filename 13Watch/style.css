@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppin',sans-serif;
+
+}
+
+.container{
+      display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.watch-cont{
+    height: 400px;
+    width: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30%;
+    margin: 200px;
+}
+
+.watch-cont h1{
+    color: white;
+}
+
+.buttons
+{
+   
+   
+}
+
+.buttons img{
+    /* height: 50px; */
+    width: 40px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.buttons img:nth-child(2)
+{
+      width: 60px;
+}
+
