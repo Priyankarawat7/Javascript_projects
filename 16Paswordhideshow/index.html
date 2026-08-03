@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="password-cont">
+     <input type="password" name="" id="password">
+     <img src="eye-close.png" alt="" id="eyeicon" onclick="showPassword()">
+    </div>
+   
+  </div>
+
+    
+
+  <script>
+    const passwordbox= document.querySelector('.password-cont');
+    const password=document.getElementById('password');
+    const eyeicon=document.getElementById('eyeicon')
+    
+    function showPassword()
+    {
+        if(password.type=="password")
+    {
+        password.type="text"
+        eyeicon.src="eye-open.png"
+    }
+
+    else{
+        password.type="password"
+        eyeicon.src="eye-close.png"
+    }
+ 
+
+    }
+
+    
+    
+
+
+    
+  </script>
+</body>
+</html>

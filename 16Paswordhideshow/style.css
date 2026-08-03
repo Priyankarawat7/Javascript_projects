@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+     height: 100%;
+    min-height: 100vh;
+    background-color: rgb(41, 88, 136);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.password-cont{
+    height: 50px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.password-cont img{
+    height: 20px;
+    width: 20px;
+}
+
+.password-cont input{
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+}
