@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <img src="" alt="">
+            <form action="" id="form" >
+                <div class="input-box">
+                    <label for="">Full Name</label>
+                <input type="text" placeholder="Enter your name" name="" id="">
+                </div>
+
+                  <div class="input-box">
+                    <label for="">Phone No.</label>
+                <input type="number" placeholder="Enter your number" name="" id="">
+                </div>
+
+                  <div class="input-box">
+                    <label for="">Email Id</label>
+                <input type="email" placeholder="Enter your email" name="" id="">
+                </div>
+
+                  <div class="input-box">
+                    <label for="">Your message</label>
+                    <textarea name="" id="" placeholder="Enter your message"></textarea>
+                <!-- <input type="" placeholder="Enter your message" name="" id=""> -->
+                </div>
+
+                   <div class="input-box">
+                    <button class="btn">Submit</button>
+                </div>
+
+            </form>
+            <div class="success">
+            <p class="valid-invalid">Form Subbmitted sucessfully</p>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+
+    <script>
+
+        const form=document.getElementById('form');
+        // const inputbox=document.querySelector('.input-box')
+      //  const formbutton= document.querySelector('.btn');
+        const success= document.querySelector('.valid-invalid')
+
+        const name=document.querySelector('input[type="text"]')
+        const phone=document.querySelector('input[type="number"]')
+        const email=document.querySelector('input[type="email"]')
+        const message=document.querySelector('textarea')
+
+        // console.log(formbutton);
+        // console.log(form);
+
+        form.addEventListener('submit',(e)=>{
+
+            e.preventDefault()
+        if(name.value==="" || phone.value==="" || email.value==="" || message.value==="")
+         {
+             success.innerText="Please Enter details"
+             success.style.visibility = "visible";
+         }
+
+         else if(phone.value.length !=10)
+         {
+            success.innerHTML="Phone no. should be 10 digit "
+            success.style.visibility = "visible";
+         }
+
+        //  else if(email.value.includes("@"))
+        //  {
+        //     success.innerHTML="Email includes @"
+        //      success.style.visibility = "visible";
+        //  }
+
+         else{
+            success.innerText="Form Subbmitted Successfully"
+            success.classList.add('valid-success');
+            success.style.visibility = "visible";
+         }
+         })
+        
+    </script>
+</body>
+
+</html>
