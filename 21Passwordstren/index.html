@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="input-box">
+            <input type="password" name="" id="password">
+           <button type="submit" id="btn"> <img src="arrow.png" alt=""></button>
+        </div>
+
+        <p class="text-msg">password is strong</p>
+
+    </div>
+
+
+
+    <script>
+
+        const button=document.getElementById('btn');
+        const password=document.getElementById('password');
+        const textmsg =document.querySelector('.text-msg');
+
+        let upercase=[]
+
+
+        button.addEventListener('click',(e)=>{
+
+            e.preventDefault();
+
+            if(password.value==="")
+        {
+            textmsg.innerHTML="please enter something"
+            textmsg.style.visibility= "visible";
+            textmsg.style.color="red";
+        }
+
+        else if(password.value.length<6)
+        {
+            textmsg.innerHTML="password is weak"
+             textmsg.style.visibility= "visible";
+            textmsg.style.color="red";
+        }
+
+          else if(password.value.length>4 && password.value.length<=10)
+        {
+             textmsg.innerHTML="paasword is mediuim"
+              textmsg.style.visibility= "visible";
+            textmsg.style.color="red";
+            
+        }
+          else 
+        {
+              textmsg.innerHTML="paasword is strong"
+             textmsg.style.visibility= "visible";
+               textmsg.style.color="green";
+             
+           
+
+            
+        }
+        })
+
+    </script>
+    
+</body>
+</html>
